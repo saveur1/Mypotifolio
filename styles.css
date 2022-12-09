@@ -184,6 +184,11 @@ body {
   text-align:center;
   width:100px;
 }
+.backbutt {
+  display:flex;
+  width:690px;
+  justify-content:right;
+}
 .btn-container {
   width:100%;
   display:flex;
