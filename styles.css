@@ -9,7 +9,6 @@ body {
 }
 #portifolio {
   height:550px;
-  margin:20px;
   background-color:#ffffff;
   display:flex;
   flex-wrap: nowrap;
