@@ -369,3 +369,17 @@ right:8px;
 .backblog {
   margin-bottom:0px;
 }
+.port_card {
+  width:600px;
+  height:300px;
+}
+ .btn_port {
+  bottom:14px;
+}
+.port_text {
+  color:var(--color);
+  font-size:13px;
+}
+.port_card {
+  background-color:#383838;
+}
