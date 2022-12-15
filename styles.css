@@ -388,12 +388,12 @@ right:8px;
   height:20px;
   background-color:#d9534f;
   border-radius:10px;
-  position:absolute;
-  top: 110px;
-  left:500px;
+  position:relative;
+  bottom: 57px;
+  left:100px;
   padding-left: 30px;
   color:#ecdfdf;
-  display:none
+  visibility: hidden;
 }
 .firstname_error::after, .lastname_error::after,.email_error::after,.phone_error::after, .subject_error::after, .message_error::after {
   content: "";
@@ -405,19 +405,10 @@ right:8px;
   border-style: solid;
   border-color: #d9534f transparent transparent transparent;
 }
-.lastname_error {
-  left:900px;
-}
-.email_error {
-  top:170px;
-}
-.phone_error {
-  top:170px;
-  left:900px;
-}
 .subject_error {
-  top:230px;
+  left:250px;
 }
 .message_error {
-  top:290px;
+  bottom:144px;
+  left:250px;
 }
