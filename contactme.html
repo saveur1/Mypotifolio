@@ -109,32 +109,38 @@
                 <div class="first_name">
                     <label for="first_name">FIRSTNAME</label>
                     <input type="text" name="first_name" id="first_name">
+                    <div class="firstname_error">Fill this field please</div>
                 </div>
                 <div class="last_name">
                     <label for="last_name">LASTNAME</label>
                     <input type="text" name="last_name" id="last_name">
+                    <div class="lastname_error">Fill this field please</div>
                 </div>
             </div>           
             <div class="address">
                 <div class="emailaddr">
                     <label for="emailaddr">EMAIL ADDRESS</label>
                     <input type="email" name="emailaddr" id="emailaddr">
+                    <div class="email_error">Fill this field please</div>
                 </div>
                 <div class="phone">
                     <label for="phone">PHONE NUMBER</label>
                     <input type="tel" name="phone" id="phone">
+                    <div class="phone_error">Fill this field please</div>
                 </div>
             </div>
             <div class="subject">
                 <label for="subject">SUBJECT</label>
                 <input type="text" name="subject" id="subject">
+                <div class="subject_error">Fill this field please</div>
             </div>
             <div class="message">
                 <label for="message">MESSAGE</label>
                 <textarea name="message" id="message"></textarea>
+                <div class="message_error">Fill this field please</div>
             </div>
             <div class="sendMessage">
-                <input type="submit" name="sendMessage" id="sendMessage" value="Send Message">
+                <input type="submit" name="sendMessage" id="sendMessage" value="Send Message" onclick="validateContactForm()">
             </div>
             <div class="moreaddress">
                 <div class="location">
@@ -152,5 +158,6 @@
             </div>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
