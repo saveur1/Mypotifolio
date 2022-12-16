@@ -13,7 +13,7 @@
     let message_error=document.getElementsByClassName("message_error")[0];
     let error=0;
     let email_regex=/[a-zA-Z0-9_.]{4,30}[@][a-zA-Z]{2,10}[.][a-zA-Z]{2,6}/;
-    let phone_regex=/[0-9]{15,}/; 
+    let phone_regex=/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/; 
 function validateContactForm()
 {
     validateFisrstName();
@@ -83,7 +83,7 @@ function validatePhone()
         phone.style.border="2px solid #d9534f";
         error=1;
     }
-    else if(phone_regex.test(phone.value))
+    else if(!phone_regex.test(phone.value))
     {
         phone_error.innerHTML="Invalid phone format";
         phone_error.style.visibility="visible";
