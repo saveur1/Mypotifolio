@@ -11,6 +11,14 @@ body {
   margin:0px;
   padding:0px;
 }
+@media screen and (max-width:600px) {
+    .profile {
+      display:none
+    }
+    .item {
+      margin-left:10px;
+    }
+}
 #portifolio {
   height:100vh;
   background-color:#ffffff;
