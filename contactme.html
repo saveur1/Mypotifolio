@@ -5,18 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portifolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet"  media="(max-width:750px)" type="text/css" href="mobile_styles.css" />
+    <link rel="stylesheet" media="(min-width:750px)"  href="styles.css">
 </head>
 <body>
     <div id="portifolio">
         <div class="profile">
             <div class="profilePicture">
                 <div class="picture">
-                <img src="images/saveur.jpg" width="150"/>
+                <img src="images/saveur.jpg" width="150" alt="Saveur" />
                 </div>
                 <span class="names"> Bikorimana Saveur</span>
                 <span class="subtitle">Full Stack Developer, Cloud Engineer</span>
             </div>
+            <div class="mobile_footer">
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">HTML</p>
+                        <p class="prog">89%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="htmlProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">PHP</p>
+                        <p class="prog">90%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="phpProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">CSS</p>
+                        <p class="prog">90%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="cssProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">JAVASCRIPT</p>
+                        <p class="prog">60%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="jsProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">JQUERY</p>
+                        <p class="prog">75%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="jqueryProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">JAVA & JSP</p>
+                        <p class="prog">85%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="javaProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progLanguage">
+                    <div class="language">
+                        <p class="lan">C++</p>
+                        <p class="prog">65%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="cppProgress">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="pageFooter">
+                    <img src="images/codepen.png" width="31" height="31">
+                    <img src="images/twiter.png" width="31" height="29">
+                    <img src="images/linkedin.png" width="31" height="31">
+                    <img src="images/github.png" width="31" height="31">
+                    <img src="images/whatsapp.png" width="31" height="31">
+                </div>
+            </div>
+        </div>
+
+        <div class="portcontent">
+            <div class="backbutt"><a href="index.html" class="button">Back Home</a></div>
+            <h1 class="contentTitle gold contactMe">Contact Me</h1>
+            <div class="fullname">
+                <div class="first_name">
+                    <label for="first_name">FIRSTNAME</label>
+                    <input type="text" name="first_name" id="first_name" onblur="validateFisrstName()">
+                    <div class="firstname_error">Fill this field please</div>
+                </div>
+                <div class="last_name">
+                    <label for="last_name">LASTNAME</label>
+                    <input type="text" name="last_name" id="last_name" onblur="validateLastName()">
+                    <div class="lastname_error">Fill this field please</div>
+                </div>
+            </div>           
+            <div class="address">
+                <div class="emailaddr">
+                    <label for="emailaddr">EMAIL ADDRESS</label>
+                    <input type="email" name="emailaddr" id="emailaddr" onblur="validateEmail()">
+                    <div class="email_error">Fill this field please</div>
+                </div>
+                <div class="phone">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone" onblur="validatePhone()">
+                    <div class="phone_error">Fill this field please</div>
+                </div>
+            </div>
+            <div class="subject">
+                <label for="subject">SUBJECT</label>
+                <input type="text" name="subject" id="subject" onblur="validateSubject()">
+                <div class="subject_error">Fill this field please</div>
+            </div>
+            <div class="message">
+                <label for="message">MESSAGE</label>
+                <textarea name="message" id="message" onblur="validateMessage()"></textarea>
+                <div class="message_error">Fill this field please</div>
+            </div>
+            <div class="sendMessage">
+                <input type="submit" name="sendMessage" id="sendMessage" value="Send Message" onclick="validateContactForm()">
+            </div>
+            <div class="moreaddress">
+                <div class="location">
+                    <img src="images/location.png" width="40">
+                    <p class="location_info"><span class="bold">Address:</span>Kicukiro, Kigali, Rwanda.</p>
+                </div>
+                <div class="myphone">
+                    <img src="images/myphone.png" width="40">
+                    <p class="location_info"><span class="bold">Address:</span>Kicukiro, Kigali, Rwanda.</p>
+                </div>
+                <div class="myemail">
+                    <img src="images/myemaill.png" width="40">
+                    <p class="location_info"><span class="bold">Address:</span>Kicukiro, Kigali, Rwanda.</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile mobile_only">
             <div class="progLanguage">
                 <div class="language">
                     <p class="lan">HTML</p>
@@ -102,62 +247,6 @@
                 <img src="images/whatsapp.png" width="31" height="31">
             </div>
         </div>
-        <div class="portcontent">
-            <div class="backbutt"><a href="index.html" class="button">Back Home</a></div>
-            <h1 class="contentTitle gold contactMe">Contact Me</h1>
-            <div class="fullname">
-                <div class="first_name">
-                    <label for="first_name">FIRSTNAME</label>
-                    <input type="text" name="first_name" id="first_name" onblur="validateFisrstName()">
-                    <div class="firstname_error">Fill this field please</div>
-                </div>
-                <div class="last_name">
-                    <label for="last_name">LASTNAME</label>
-                    <input type="text" name="last_name" id="last_name" onblur="validateLastName()">
-                    <div class="lastname_error">Fill this field please</div>
-                </div>
-            </div>           
-            <div class="address">
-                <div class="emailaddr">
-                    <label for="emailaddr">EMAIL ADDRESS</label>
-                    <input type="email" name="emailaddr" id="emailaddr" onblur="validateEmail()">
-                    <div class="email_error">Fill this field please</div>
-                </div>
-                <div class="phone">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone" onblur="validatePhone()">
-                    <div class="phone_error">Fill this field please</div>
-                </div>
-            </div>
-            <div class="subject">
-                <label for="subject">SUBJECT</label>
-                <input type="text" name="subject" id="subject" onblur="validateSubject()">
-                <div class="subject_error">Fill this field please</div>
-            </div>
-            <div class="message">
-                <label for="message">MESSAGE</label>
-                <textarea name="message" id="message" onblur="validateMessage()"></textarea>
-                <div class="message_error">Fill this field please</div>
-            </div>
-            <div class="sendMessage">
-                <input type="submit" name="sendMessage" id="sendMessage" value="Send Message" onclick="validateContactForm()">
-            </div>
-            <div class="moreaddress">
-                <div class="location">
-                    <img src="images/location.png" width="40">
-                    <p class="location_info"><span class="bold">Address:</span>Kicukiro, Kigali, Rwanda.</p>
-                </div>
-                <div class="myphone">
-                    <img src="images/myphone.png" width="40">
-                    <p class="location_info"><span class="bold">Address:</span>Kicukiro, Kigali, Rwanda.</p>
-                </div>
-                <div class="myemail">
-                    <img src="images/myemaill.png" width="40">
-                    <p class="location_info"><span class="bold">Address:</span>Kicukiro, Kigali, Rwanda.</p>
-                </div>
-            </div>
-        </div>
     </div>
-    <script src="javascript.js"></script>
 </body>
 </html>
