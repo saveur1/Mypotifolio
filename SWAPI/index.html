@@ -27,6 +27,23 @@
     getApiData();
     let exit=document.getElementsByClassName("cross")[0].addEventListener("click",closeModal);
   }
+      function loadXHR(url) {
+
+        return new Promise(function(resolve, reject) {
+            try {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url);
+                xhr.responseType = "blob";
+                xhr.onerror = function() {reject("Network error.")};
+                xhr.onload = function() {
+                    if (xhr.status === 200) {resolve(xhr.response)}
+                    else {reject("Loading error:" + xhr.statusText)}
+                };
+                xhr.send();
+            }
+            catch(err) {reject(err.message)}
+        });
+    }
     async function getApiData()
     {
         var single_card='';
@@ -46,6 +63,10 @@
            const arr_photo=Object.keys(data_photo).map((key) => [key,data_photo[key]]);
             for(let i=0;i<arr[3][1].length;i++)
             {
+                loadXHR(arr_photo[2][1][i].src.portrait).then(function(blob) {
+                      localStorage.setItem("image",blob);
+                      co
+                 });
                 single_card+='<div class="card" id="'+arr[3][1][i].name+'" data-id="'+arr_photo[2][1][i].id+'" onclick="openModal(this)">';
                 single_card+='<img src="'+arr_photo[2][1][i].src.portrait+'" height="340" alt="Avatar" style="width:100%">';
                 single_card+='<div class="container">';
