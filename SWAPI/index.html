@@ -48,7 +48,7 @@
     {
         var single_card='';
         let response = await fetch("https://swapi.dev/api/people/");
-        let response2=await fetch("https://api.pexels.com/v1/search?query=profile&per_page=20",{
+        let response2=await fetch("https://api.pexels.com/v1/search?query=profile&per_page=10",{
                     method:"GET",
                     headers:{
                       Accept:"Application/json",
@@ -62,7 +62,7 @@
            const arr = Object.keys(data).map((key) => [key, data[key]]);
            const arr_photo=Object.keys(data_photo).map((key) => [key,data_photo[key]]);
             //let images = {};
-            for(let i=10;i<arr[3][1].length;i++)
+            for(let i=0;i<arr[3][1].length;i++)
             {
 //                 loadXHR(arr_photo[2][1][i].src.portrait).then(function(blob) {
 //                  images.arr_photo[2][1][i].id=blob;  
